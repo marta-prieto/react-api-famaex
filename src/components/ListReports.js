@@ -1,4 +1,5 @@
 import React from 'react';
+import ReportCard from './components/ReportCard';
 import PropTypes from 'prop-types';
 
 const ListReports = props => {
@@ -6,16 +7,18 @@ const ListReports = props => {
 
     return (
 
-        <ol className="main__list-reports"
+        <ol className="main__list-reports">
             {reports
                 .map(item => {
                     return (
                         <li className="list__reports" key={item.id}>
+                            <ReportCard
                             name={item.name}
+                            />
                         </li>
                     );
                 })}
-        </ol >
+        </ol>
         
     );
 };

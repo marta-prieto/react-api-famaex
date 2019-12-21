@@ -1,7 +1,7 @@
 import React from 'react';
 import { fetchReports } from './services/fetch-reports-api';
-import { ListReports } from './components/ListReports';
-import './App.css';
+import ListReports  from './components/ListReports';
+
 
 class App extends React.Component {
   constructor(props) {
