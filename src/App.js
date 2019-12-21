@@ -1,5 +1,6 @@
 import React from 'react';
 import { fetchReports } from './services/fetch-reports-api';
+import { ListReports } from './components/ListReports';
 import './App.css';
 
 class App extends React.Component {
@@ -7,7 +8,8 @@ class App extends React.Component {
     super(props);
 
     this.state = {
-      informs: [],
+      reports: [],
+      data: ''
     }
     this.getReports = this.getReports.bind(this);
 
@@ -20,17 +22,22 @@ class App extends React.Component {
     fetchReports()
       .then(data => {
         this.setState({
-          informs: data.id
+          reports:data.name
         });
       })
   }
 
   render() {
+    const { reports } = this.state;
     return (
       <div className="App">
         <header className="App-header">
           <h1>TRY-REPORTS</h1>
         </header>
+        <ListReports
+        reports= {reports}
+        
+        />
       </div>
     );
   }
