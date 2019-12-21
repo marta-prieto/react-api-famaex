@@ -11,11 +11,13 @@ const ListReports = props => {
             {reports
                 .map(item => {
                     return (
+                        <section className="main__section">
                         <li className="list__reports" key={item.id}>
                             <ReportCard
-                            name={item.name}
+                            id={item.id}
                             />
                         </li>
+                        </section>
                     );
                 })}
         </ol>
