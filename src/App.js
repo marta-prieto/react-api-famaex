@@ -1,7 +1,7 @@
 import React from 'react';
 import { fetchReports } from './services/fetch-reports-api';
 import ReportsHome from './components/ReportsHome';
-import './App.css';
+import './App.scss';
 
 
 class App extends React.Component {
@@ -47,7 +47,7 @@ class App extends React.Component {
   render() {
     const { reports, queryData } = this.state;
     return (
-      <div className="App">
+        <body className="App">
         <header className="App-header">
           <h1 className="main__title-app">informes</h1>
         </header>
@@ -62,7 +62,7 @@ class App extends React.Component {
           queryData={queryData}
           reports={reports}
         />
-      </div>
+        </body>
     );
   }
 }

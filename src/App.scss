@@ -1,0 +1,55 @@
+.App {
+  height: 100vh;
+  color: black;
+  margin: 0;
+  padding: 0;
+}
+
+.main__title-app {
+  text-transform: capitalize;
+  margin: 15px 30px;
+}
+
+.main__list-reports {
+  text-align: center;
+  padding: 5px;
+}
+
+.list__reports {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  background: lightgrey;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-rows: 1fr 1fr 1fr 1fr;
+  grid-gap: 1px;
+  width: 100%;
+}
+.main__card-article {
+  text-align: center;
+  border: 1px solid black;
+  margin:2px;
+
+}
+
+.name__report {
+  margin: 15px;
+}
+.footer__app {
+  border-top: 1px solid black;
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer__title {
+  text-transform: capitalize;
+}
+.footer__menu{
+  list-style: none;
+  
+}
+.footer__link {
+  text-decoration: none;
+  color: black;
+}
