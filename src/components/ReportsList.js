@@ -17,7 +17,6 @@ const ReportsList = props => {
                             <ReportsCard
                             id={item.id}
                             name={item.name}
-                            group={item.group}
                             text={item.Text}
                             />
                         </li>
@@ -31,6 +30,7 @@ const ReportsList = props => {
 
 ReportsList.propTypes = {
     reports: PropTypes.arrayOf(PropTypes.object).isRequired,
+    queryData: PropTypes.string.isRequired
     /* id: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,
     group: PropTypes.string.isRequired,

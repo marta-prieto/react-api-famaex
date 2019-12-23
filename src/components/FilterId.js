@@ -1,11 +1,11 @@
-import React from 'react';
+/* import React from 'react';
 import PropTypes from 'prop-types';
 
 const FilterId = props => {
     const { getQueryData, queryData } = props;
     return (
         <div className="filters__list">
-            <label>ID: </label>
+            <label>find Id: </label>
             <input className="input" type="text" onChange={getQueryData} value={queryData} />
         </div>
     );
@@ -16,4 +16,4 @@ FilterId.propTypes = {
     queryData: PropTypes.string.isRequired
 };
 
-export default FilterId;
+export default FilterId; */

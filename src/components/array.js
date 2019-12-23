@@ -20,7 +20,8 @@
     "Text": "Descripción corta del informe 3.Como en el caso del informe 3 la altura será el combinado entre el informe 2 y el informe 4"
 },
 {
-    "id": "4", "createdAt": "2019-12-20T04:43:29.130Z",
+    "id": "4", 
+    "createdAt": "2019-12-20T04:43:29.130Z",
     "name": "Informe  4",
     "group": "2",
     "Text": "Una descripción corta del informe 4."

@@ -1,5 +1,5 @@
 import React from 'react';
-import FilterId from './FilterId';
+/* import FilterId from './FilterId'; */
 import ReportsList from './ReportsList';
 import PropTypes from 'prop-types';
 
@@ -8,10 +8,10 @@ const ReportsHome = props => {
 
   return (
     <React.Fragment>
-      <FilterId
+    {/*   <FilterId
         getQueryData={getQueryData}
         queryData={queryData}
-      />
+      /> */}
 
       <ReportsList
         reports={reports}

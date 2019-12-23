@@ -1,6 +1,7 @@
 import React from 'react';
 import { fetchReports } from './services/fetch-reports-api';
 import ReportsHome from './components/ReportsHome';
+import './App.css';
 
 
 class App extends React.Component {
@@ -14,6 +15,7 @@ class App extends React.Component {
     }
     this.getReports = this.getReports.bind(this);
     this.getQueryData = this.getQueryData.bind(this);
+    /* this.handleId = this.handleId.bind(this); */
 
   }
   componentDidMount() {
@@ -36,18 +38,30 @@ class App extends React.Component {
     });
   }
 
+ /*  handleId() {
+    this.setState((prevState, props) => ({
+      chooseId: prevState.chooseId ===  `{item.id}`  ? `{item.id}` : `{item.createdAt}`
+    }));
+  } */
+
   render() {
     const { reports, queryData } = this.state;
     return (
       <div className="App">
         <header className="App-header">
-          <h1 className="main__title-app"></h1>
+          <h1 className="main__title-app">informes</h1>
         </header>
+      {/*   <button
+        className={`btn btn-${this.state.chooseId}`}
+        onClick={this.handleId}
+      >
+        {this.props.label}
+      </button> */}
         <ReportsHome
-                getQueryData={this.getQueryData}
-                queryData={queryData}
-                reports={reports}
-              />
+          getQueryData={this.getQueryData}
+          queryData={queryData}
+          reports={reports}
+        />
       </div>
     );
   }

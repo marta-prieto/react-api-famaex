@@ -5,5 +5,10 @@ color: black;
 }
 
 .main__title-app{
+    text-transform: capitalize;
+}
+
+.list__reports{
+  list-style: none;
   
 }
