@@ -4,15 +4,20 @@
   margin: 0;
   padding: 0;
 }
-
+.App__header {
+  margin: 15px 0 0;
+    border-bottom: 1px solid grey;
+  
+}
 .main__title-app {
   text-transform: capitalize;
-  margin: 15px 30px;
+  margin: 15px 0 0 40px;
 }
 
 .main__list-reports {
   text-align: center;
   padding: 5px;
+  margin: 5px 0 0;
 }
 
 .list__reports {
@@ -39,17 +44,31 @@
 }
 .footer__app {
   border-top: 1px solid black;
+  width: 100vw;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: row; 
+  justify-content: center; 
+  margin: 100px 0 0;
+  padding: 0;
 }
 .footer__title {
   text-transform: capitalize;
+  margin:15px 5px 15px 15px;
+  padding: 0;
 }
 .footer__menu{
   list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 15px 0;
+  padding: 0;
   
+}
+.footer__nav {
+  margin: 0;
 }
 .footer__link {
   text-decoration: none;
   color: black;
+  margin: 3px ;
 }

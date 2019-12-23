@@ -27,23 +27,21 @@ const ReportsList = props => {
       </ul>
     </section>
         <footer className="footer__app"> 
-          <span className="footer__title">footer</span>
+          <span className="footer__title">footer |</span>
+          
           <nav class="footer__nav">
           <ul class="footer__menu">
             <li class="footer__list">
-              <a class="footer__link" href="/">con</a>
+              <a class="footer__link" href="/">con |</a>
             </li>
             <li class="footer__list">
-              <a class="footer__link" href="/">algunos</a>
+              <a class="footer__link" href="/"> algunos |</a>
             </li>
             <li class="footer__list">
               <a class="footer__link" href="/">links</a>
             </li>
           </ul>
-
-        </nav>
-
-        
+        </nav>   
         
     </footer>
     </main>

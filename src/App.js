@@ -47,8 +47,8 @@ class App extends React.Component {
   render() {
     const { reports, queryData } = this.state;
     return (
-        <body className="App">
-        <header className="App-header">
+        <div className="App">
+        <header className="App__header">
           <h1 className="main__title-app">informes</h1>
         </header>
       {/*   <button
@@ -62,7 +62,7 @@ class App extends React.Component {
           queryData={queryData}
           reports={reports}
         />
-        </body>
+        </div>
     );
   }
 }
