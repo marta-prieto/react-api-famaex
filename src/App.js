@@ -1,6 +1,6 @@
 import React from 'react';
 import { fetchReports } from './services/fetch-reports-api';
-import ListReports from './components/ListReports';
+import ReportsHome from './components/ReportsHome';
 
 
 class App extends React.Component {
@@ -9,9 +9,11 @@ class App extends React.Component {
 
     this.state = {
       reports: [],
-      
+      queryData: ''
+
     }
     this.getReports = this.getReports.bind(this);
+    this.getQueryData = this.getQueryData.bind(this);
 
   }
   componentDidMount() {
@@ -22,21 +24,30 @@ class App extends React.Component {
     fetchReports()
       .then(data => {
         this.setState({
-          reports: [],
+          reports: data,
         });
       })
   }
 
+  getQueryData(event) {
+    const queryData = event.currentTarget.value;
+    this.setState({
+      queryData: queryData
+    });
+  }
+
   render() {
-    const { reports } = this.state;
+    const { reports, queryData } = this.state;
     return (
       <div className="App">
         <header className="App-header">
-          <h1>TRY-REPORTS</h1>
+          <h1 className="main__title-app"></h1>
         </header>
-        <ListReports
-          reports={reports}
-        />
+        <ReportsHome
+                getQueryData={this.getQueryData}
+                queryData={queryData}
+                reports={reports}
+              />
       </div>
     );
   }
