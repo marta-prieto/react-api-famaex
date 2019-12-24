@@ -4,7 +4,7 @@ import ReportsList from './ReportsList';
 import PropTypes from 'prop-types';
 
 const ReportsHome = props => {
-  const { getQueryData, queryData, reports } = props;
+  const { /* getQueryData, */ queryData, reports } = props;
 
   return (
     <React.Fragment>
